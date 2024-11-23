@@ -1,0 +1,244 @@
+body {
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    color: #7D7A62;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    header nav ul {
+        list-style: none;
+    }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-family: 'Impact', sans-serif;
+            }
+
+                header nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Individual sections spacing */
+section {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+/* Section 1: Profile Table & Image */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #BE6868;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-table {
+    flex: 1;
+}
+
+.profile-table table{
+    width: 100%;
+}
+
+    .profile-table table td {
+        border: 2px solid #fff; 
+        border-radius: 10px;
+        padding: 10px; 
+        text-align: left; /* Centers text horizontally */
+        vertical-align: middle; /* Centers text vertically */
+        background-color: #f9f9f9; 
+        color: #555; /* Text color */
+        font-family: Arial, sans-serif; /* Font style */
+    }
+
+        .profile-table table td:first-child {
+            font-weight: bold;
+            background-color: #E59F9F;
+            text-align: left;
+            width: 30%; 
+        }
+        
+        .profile-table table td:last-child {
+            text-align: left;
+            width: 110%; 
+        }
+
+
+    .profile-image {
+    flex: 1;
+    text-align: center;
+}
+
+        .profile-image img {
+            width: 40%;
+            border: 6px solid #fff; 
+            border-radius: 20px; 
+            object-fit: cover;
+        }
+
+/* Section 2: Responsive Card Slider For Skill*/
+.skills-section {
+    padding: 20px;
+    background-color: #6BBEAB;
+}
+
+.slider-container {
+    max-width: 90%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    min-width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+    .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(100% / 2); /* Show 2 cards at a time on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 100%; /* Show 1 card at a time on mobile */
+    }
+}
+
+
+/* Section 3: Family Image & Text */
+.family-section {
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    text-align: center; 
+    padding: 40px;
+    background-color: #C7845B;
+}
+
+.family-container {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; 
+    gap: 20px; 
+}
+
+.family-text {
+    flex: 1;
+    text-align: left;
+}
+
+    .family-text h2 {
+        font-family: 'Comic Sans MS', cursive;
+        font-weight: bold;
+        color: #F8EFA7;
+        font-size: 4rem;
+        line-height: 0.2;
+    }
+
+    .family-text p {
+        font-family: 'Times New Roman', serif;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+.family-image {
+    flex: 1;
+    text-align: right;
+}
+
+    .family-image img {
+        max-width: 75%;
+        border: 6px solid #F8EFA7;
+        border-radius: 20px;
+    }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #60A2AA;
+    border: 2px solid #45747A;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .button:hover {
+        background-color: #2980b9;
+        border-color: #1c6ea4;
+    }
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}

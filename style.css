@@ -1,0 +1,179 @@
+body {
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Impact', sans-serif;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee container */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #A49564; /* Optional: Background color */
+    padding: 20px 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 150s linear infinite; /* Adjust duration as needed */
+}
+
+.marquee-content img {
+    width: 150px; /* Adjust image width as needed */
+    margin: 0 0px; /* Space between images */
+    vertical-align: middle;
+}
+
+/* Keyframes for the marquee animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Start at normal position */
+    }
+    to {
+        transform: translateX(-100%); /* Move one full width of images */
+    }
+}
+
+/* Section */
+.section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #87AA5F 
+}
+
+/* Profile Section Image and Text */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;/* Center the content horizontally */
+    padding-left: 0;
+    justify-content: flex-start;
+}
+
+    .image-text-container img {
+        width: 40%;
+        border-radius: 30px; /* Optional: round the corners */
+        border: 10px solid #497A45;
+        object-fit: cover;
+    }
+
+.text-content {
+    width: 60%;
+}
+
+    .text-content h1 {
+        text-align: left;
+        font-family: 'Comic Sans MS', cursive;
+        font-weight: bold;
+        color: #EDEF61;
+        margin-bottom: 10px;
+        font-size: 4rem;
+    }
+
+    .text-content h1 p {
+        font-family: 'Comic Sans MS', cursive;
+        font-weight: bold;
+        color: #7D7A62;
+        font-size: 2rem;
+        line-height: 1;
+        color: #fff;
+    }
+
+    .text-content p2 {
+        font-family: 'Comic Sans MS', cursive;
+        font-weight: bold;
+        color: #7D7A62;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: #fff;
+    }
+   
+
+/* Button Styling for Profile Section */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #60A2AA;
+    border: 2px solid #45747A;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .button:hover {
+        background-color: #45747A;
+        border-color: #1c6ea4;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+        .image-text-container img,
+        .text-content {
+            width: 100%; /* Make both items take full width */
+        }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}

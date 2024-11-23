@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulfah | My Galley</title>
+    <link rel="stylesheet" href="gallery-style.css">
+</head>
+<body style="background-color: #A49564;">
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li>&#128037</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li>&#128037</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <h1>Gallery "Life Preview"</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/gallery1.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery3.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery4.jpg" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery5.jpg" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery6.jpg" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery7.jpg" alt="Gallery Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery8.jpg" alt="Gallery Image 8">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery9.jpg" alt="Gallery Image 9">
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img/gallery10.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery11.jpg" alt="Gallery Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery12.jpg" alt="Gallery Image 12">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery13.jpg" alt="Gallery Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery14.jpg" alt="Gallery Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery15.jpg" alt="Gallery Image 15">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery16.jpg" alt="Gallery Image 16">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery17.jpg" alt="Gallery Image 17">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery18.jpg" alt="Gallery Image 18">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery19.jpg" alt="Gallery Image 19">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery20.jpg" alt="Gallery Image 9">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="close-lightbox">&times;</span>
+        <img src="" alt="Lightbox Image" id="lightbox-img">
+    </div>
+
+    <script>// JavaScript for Lightbox Functionality
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.getElementById('close-lightbox');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = item.src;
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zulfah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
