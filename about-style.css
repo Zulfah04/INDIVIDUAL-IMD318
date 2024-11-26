@@ -84,11 +84,11 @@ section {
         border: 2px solid #fff; 
         border-radius: 10px;
         padding: 10px; 
-        text-align: left; /* Centers text horizontally */
-        vertical-align: middle; /* Centers text vertically */
+        text-align: left; 
+        vertical-align: middle; 
         background-color: #f9f9f9; 
-        color: #555; /* Text color */
-        font-family: Arial, sans-serif; /* Font style */
+        color: #555; 
+        font-family: Arial, sans-serif; 
     }
 
         .profile-table table td:first-child {
@@ -157,13 +157,13 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .card {
-        flex: 0 0 calc(100% / 2); /* Show 2 cards at a time on smaller screens */
+        flex: 0 0 calc(100% / 2); 
     }
 }
 
 @media (max-width: 480px) {
     .card {
-        flex: 0 0 100%; /* Show 1 card at a time on mobile */
+        flex: 0 0 100%; 
     }
 }
 
@@ -171,8 +171,8 @@ section {
 /* Section 3: Family Image & Text */
 .family-section {
     display: flex;
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
+    align-items: center; 
+    justify-content: center; 
     text-align: center; 
     padding: 40px;
     background-color: #C7845B;
@@ -180,7 +180,7 @@ section {
 
 .family-container {
     display: flex;
-    flex-direction: row; /* Stack items vertically */
+    flex-direction: row; 
     align-items: center; 
     gap: 20px; 
 }
